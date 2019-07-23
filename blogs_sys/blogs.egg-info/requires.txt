@@ -1,0 +1,16 @@
+django~=2.2.3
+gunicorn==19.9.0
+supervisor==4.0.2
+xadmin==2.0.1
+PyMySQL==0.9.3
+django-ckeditor==5.4.0
+django-rest-framework==0.1.0
+django-redis==4.10.0
+django-autocomplete-light==3.2.10
+mistune==0.8.4
+Pillow==6.1.0
+coreapi==2.3.3
+django-debug-toolbar==2.0
+
+[ipython]
+ipython==7.6.1

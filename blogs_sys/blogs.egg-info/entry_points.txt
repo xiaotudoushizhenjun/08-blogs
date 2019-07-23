@@ -1,0 +1,3 @@
+[console_script]
+blog_manage = manage:main
+
