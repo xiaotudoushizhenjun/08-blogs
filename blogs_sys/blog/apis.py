@@ -29,7 +29,7 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAdminUser
 
 from .models import Post, Category
-from .serializers import PostSerializer, PostDeailSerializer, CategorySerializer, CategoryDetailSerializer
+from .serializers import PostSerializer, PostDetailSerializer, CategorySerializer, CategoryDetailSerializer
 
 
 class PostViewSet(viewsets.ReadOnlyModelViewSet):
@@ -39,7 +39,7 @@ class PostViewSet(viewsets.ReadOnlyModelViewSet):
     # permission_classes = [IsAdminUser]  # 写入时的权限校验  继承类viewsets.ModelViewSet
 
     def retrieve(self, request,  *args, **kwargs):
-        self.serializer_class = PostDeailSerializer
+        self.serializer_class = PostDetailSerializer
         return super(PostViewSet, self).retrieve(request, *args, **kwargs)
 
     def filter_queryset(self, queryset):
