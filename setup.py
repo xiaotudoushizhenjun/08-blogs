@@ -10,18 +10,18 @@ from setuptools import setup, find_packages
 
 setup(
     name='blogs',
-    version='0.1',
+    version='0.3',
     description='Blog System base on Django',
     author='lihui',
     author_email='15634118755@163.com',
-    url='https://www.baidu.com',
+    url='https://github.com/xiaotudoushizhenjun/08-blogs.git',
     license='MIT',
     packages=find_packages('blogs_sys'),
     package_dir={'': 'blogs_sys'},
-    # package_data={'': [  # 方法一： 打包数据文件
-    #     'themes/*/*/*/*',    # 需要按目录层级匹配
+    # package_data={'': [
+    #     'themes/*/*/*/*',
     # ]},
-    include_package_data=True,      # 方法二： 配合MANIFEST.in文件
+    include_package_data=True,
     install_requires=[
         'django~=2.2.3',
         'gunicorn==19.9.0',
@@ -51,20 +51,17 @@ setup(
         ]
     },
     classifiers=[  # Optional
-        # 软件成熟度如何？一般有下面几种选项
+
         #    3  - Alpha
         #    4  - Beta
         #    5  - Production/Stable
         'Development Status :: 3 - Alpha',
 
-        # 指明项目的受众
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries',
 
-        # 选择项目的许可证(License)
         'License :: OSI Approved :: MIT License',
 
-        # 指定项目需要的Python版本
         'Programming Language :: Python :: 3.6',
     ],
 )

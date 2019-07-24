@@ -17,14 +17,14 @@ from fabric.decorators import task
 
 
 env.roledefs = {
-    'myserver': ['the5fire@127.0.0.1:11022'],
+    'myserver': ['lihuimaster@127.0.0.1'],     # 服务器地址
 }
-env.PROJECT_NAME = 'typeidea'
-env.SETTINGS_BASE = 'typeidea/typeidea/settings/base.py'
-env.DEPLOY_PATH = '/home/the5fire/venvs/typeidea-env'
+env.PROJECT_NAME = 'blog'
+env.SETTINGS_BASE = 'blogs_sys/blogs/settings/base.py'
+env.DEPLOY_PATH = 'Django/08-blogs/env'
 env.VENV_ACTIVATE = os.path.join(env.DEPLOY_PATH, 'bin', 'activate')
 env.PYPI_HOST = '127.0.0.1'
-env.PYPI_INDEX = 'http://127.0.0.1:8080/simple'
+env.PYPI_INDEX = 'http://127.0.0.1:18080/simple'
 env.PROCESS_COUNT = 2
 env.PORT_PREFIX = 909
 
@@ -33,11 +33,11 @@ class _Version:
     origin_record = {}
 
     def replace(self, f, version):
-        with open(f, 'r') as fd:
+        with open(f, 'r', encoding="gbk") as fd:
             origin_content = fd.read()
             content = origin_content.replace('${version}', version)
 
-        with open(f, 'w') as fd:
+        with open(f, 'w', encoding='gbk') as fd:
             fd.write(content)
 
         self.origin_record[f] = origin_content

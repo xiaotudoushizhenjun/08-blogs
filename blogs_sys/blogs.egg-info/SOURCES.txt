@@ -1,5 +1,6 @@
 MANIFEST.in
 README.md
+setup.cfg
 setup.py
 blogs_sys/manage.py
 blogs_sys/blog/__init__.py

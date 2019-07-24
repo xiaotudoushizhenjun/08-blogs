@@ -1,3 +1,4 @@
+#-*-coding:GBK -*-
 """
 Django settings for blogs project.
 
@@ -11,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+VERSION = '0724105526'
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,13 +24,15 @@ INSTALLED_APPS = [
     'config',
     'comment',
 
+    'captcha',
+
     'ckeditor',
     'ckeditor_uploader',
     # 'dal',
     # 'dal_select2',
     'xadmin',
-    'crispy_forms',  # 鐩稿叧渚濊禆
-    'reversion',  # 鐩稿叧渚濊禆
+    'crispy_forms',  # 相关依赖
+    'reversion',  # 相关依赖
     'rest_framework',
 
     # 'django.contrib.sites',
@@ -136,7 +140,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'themes', THEME, "static"),
 ]
 
-XADMIN_TITLE = "Blog绠＄悊鍚庡彴"
+XADMIN_TITLE = "Blog管理后台"
 XADMIN_FOOTER_TITLE = 'Effort springs from responsibility'
 
 CKEDITOR_CONFIGS = {
@@ -145,7 +149,7 @@ CKEDITOR_CONFIGS = {
         'height': 300,
         'width': 800,
         'tabSpaces': 4,
-        'extraPlugins': 'codesnippet',   # 閰嶇疆浠ｇ爜鎻掍欢
+        'extraPlugins': 'codesnippet',   # 配置代码插件
     },
 }
 

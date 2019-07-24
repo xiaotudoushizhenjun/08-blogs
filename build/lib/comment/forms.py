@@ -7,6 +7,7 @@
 '''
 from django import forms
 import mistune
+from captcha.fields import CaptchaField
 
 from .models import Comment
 
@@ -52,3 +53,5 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['nickname', 'email', 'website', 'content']
+
+    captcha = CaptchaField()
