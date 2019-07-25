@@ -52,10 +52,6 @@ INSTALLED_APPS = [
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'rrh_oeyc8wp+y2x-8aig9u-frn)-gd9(3^(kcm9+2cnk46%e3h'
 
-
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.lihui.work']
-
-
 # Application definition
 
 
@@ -134,7 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/tmp/static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'themes', THEME, "static"),
