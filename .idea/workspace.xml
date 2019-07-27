@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b7633ef-f452-4ad4-a1f0-75b635cd8ae1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs_sys/blogs/settings/develop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs_sys/blogs/settings/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogs_sys/blogs/settings/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs_sys/blogs/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogs_sys/blogs/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs_sys/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogs_sys/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -375,7 +371,7 @@
       <workItem from="1564192605970" duration="3117000" />
       <workItem from="1564198048217" duration="1732000" />
       <workItem from="1564212749127" duration="2824000" />
-      <workItem from="1564231798771" duration="2598000" />
+      <workItem from="1564231798771" duration="3228000" />
     </task>
     <task id="LOCAL-00001" summary="基于之前的代码，此次完成了models层的最初设计">
       <created>1563327348854</created>
@@ -454,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564240110125</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改product">
+      <created>1564241611491</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1564241611491</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231828000" />
+    <option name="totallyTimeSpent" value="232458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,7 +512,8 @@
     <MESSAGE value="配置了正式环境中的MySQL和缓存" />
     <MESSAGE value="增加生产环境配置" />
     <MESSAGE value="生产环境配置，nginx+Gunicorn部署django" />
-    <option name="LAST_COMMIT_MESSAGE" value="生产环境配置，nginx+Gunicorn部署django" />
+    <MESSAGE value="修改product" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改product" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/urls/conf.py">
