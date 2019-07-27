@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    profile = os.environ.get('BLOGS_PROFILE', 'develop')
+    profile = os.environ.get('BLOGS_PROFILE', 'product')
     # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'typeidea.settings.%s' % profile)
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blogs.settings.%s' % profile)
     try:

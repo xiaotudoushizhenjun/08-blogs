@@ -1,7 +1,7 @@
 from .base import *  # NOQA
 
 DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.lihui.work']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '39.105.127.176']
 
 DATABASES = {
     'default': {
