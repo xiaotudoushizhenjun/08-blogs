@@ -1,7 +1,0 @@
-setup.py
-blogs/blogs.egg-info/PKG-INFO
-blogs/blogs.egg-info/SOURCES.txt
-blogs/blogs.egg-info/dependency_links.txt
-blogs/blogs.egg-info/entry_points.txt
-blogs/blogs.egg-info/requires.txt
-blogs/blogs.egg-info/top_level.txt
